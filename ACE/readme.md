@@ -1,5 +1,6 @@
 # Google Cloud - Associate Cloud Engineer
 * Link - https://cloud.google.com/certification/guides/cloud-engineer/
+* Google Cloud Cheat Sheet - https://github.com/gregsramblings/google-cloud-4-words
 
 ## Blueprint
 ### Setting up a cloud solution environment

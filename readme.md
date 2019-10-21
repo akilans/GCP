@@ -10,6 +10,7 @@
 * gcloud auth list - list the active account name
 * gcloud config list project - list the project ID
 * gcloud compute zones list - List all the zones
+* gcloud compute project-info describe --project myproject - heck project-wide quotas
 
 # GKE cluster
 * gcloud container clusters create my-cluster - create k8s cluster
