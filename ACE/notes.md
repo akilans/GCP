@@ -25,6 +25,19 @@
 * Persistent Disk
 
 ### Storage
-* Persistent Disk - Block Stirage
+* Persistent Disk - Block St0rage
 * Cloud Storage - Object Storage
 * Cloud Filestore - File store
+
+### Instance template
+* Global scope
+* We can't edit
+* Unmanaged instance group is not useful. It needs manual work to scale
+* Managed instance groups supports autoscaling. It creates vm if it reaches cpu threshold
+
+### IAM
+* Google Account, Service account, Google group, G Suite domain, Cloud Identity domain
+* Primitive roles, which include the Owner, Editor, and Viewer roles that existed prior to the introduction of Cloud IAM
+* Predefined roles, which provide granular access for a specific service and are managed by GCP
+* Custom roles, which provide granular access according to a user-specified list of permissions
+* gcloud compute instances add-iam-policy-binding myvm --role roles/compute.instanceAdmin --member user:akil.dove@gmail.com
