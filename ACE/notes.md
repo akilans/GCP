@@ -25,9 +25,9 @@
 * Persistent Disk
 
 ### Storage
-* Persistent Disk - Block St0rage
+* Persistent Disk - Block Storage
 * Cloud Storage - Object Storage
-* Cloud Filestore - File store
+* Cloud Filestore - File store - Use case -migration of Application to Cloud
 
 ### Instance template
 * Global scope
@@ -41,3 +41,6 @@
 * Predefined roles, which provide granular access for a specific service and are managed by GCP
 * Custom roles, which provide granular access according to a user-specified list of permissions
 * gcloud compute instances add-iam-policy-binding myvm --role roles/compute.instanceAdmin --member user:akil.dove@gmail.com
+
+### Networking
+* 
