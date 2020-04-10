@@ -37,3 +37,16 @@
 * Create Bucket in project 2 which needs to be accessed by project 1
 * Create VM and ssh to that. Upload the key in the VM
 * gcloud auth activate-service-account --key-file credentials.json
+
+# Cloud SQL
+* Cloud SQL can be connected to VM from different VPC by running as proxy instance [refer lab.png]
+* wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy && chmod +x cloud_sql_proxy
+* Get instance connection name from DB instance - qwiklabs-gcp-02-1ad0e3708ebb:us-central1:wordpress-db
+* ./cloud_sql_proxy -instances=$SQL_CONNECTION=tcp:3306 &
+
+# Resource Management
+* Global - Images, Snapshots, Networks
+* Regional - Externa IP
+* Zonal - Instances, Disks
+
+# Stack driver for Monitoring, Logging, Alerting and Error Reporting, Uptime alerting
