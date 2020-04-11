@@ -22,3 +22,16 @@ gcloud compute --project "qwiklabs-gcp-02-9efcd3c4f46f" forwarding-rules create 
 gcloud compute --project "qwiklabs-gcp-02-9efcd3c4f46f" vpn-tunnels create "tunnelt1to2" --region "us-central1" --peer-address "35.190.202.99" --shared-secret "gcprocks" --ike-version "2" --local-traffic-selector "0.0.0.0/0" --target-vpn-gateway "vpn-1"
 
 gcloud compute --project "qwiklabs-gcp-02-9efcd3c4f46f" routes create "tunnelt1to2-route-1" --network "vpn-network-1" --next-hop-vpn-tunnel "tunnelt1to2" --next-hop-vpn-tunnel-region "us-central1" --destination-range "10.1.3.0/24"
+
+# Deployment Manager
+* gcloud deployment-manager types list | grep network
+* gcloud deployment-manager deployments create dminfra --config=config.yaml --preview
+* gcloud deployment-manager deployments update dminfra
+
+# Terraform
+* create folder tfinfra and provider.tf
+* cd tfinrfa and run terraform --init
+* terraform fmt
+* terraform init
+* terrafomr plan
+* terraform apply
